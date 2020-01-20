@@ -1,22 +1,15 @@
 import React from "react";
 import "./App.css";
-import pokemonData from "./pokemon/pokemon";
-
-const bulbasaur = pokemonData[0];
-
-function PokemonCard({ pokemon }) {
-  const { id, name, type, base } = pokemon;
-  return (
-    <div>
-      <div>{name.english}</div>
-    </div>
-  );
-}
+import PokemonGallery from "./components/PokemonGallery";
+import SelectLang from "./components/SelectLang"
 
 function App() {
   return (
     <div className="App">
-      <PokemonCard pokemon={bulbasaur} />
+    <div id="banner">
+      <h1>Jonathan's PokeDex</h1>
+    </div>
+      <PokemonGallery />
     </div>
   );
 }

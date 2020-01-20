@@ -1,2 +1,18 @@
 .App {
+  text-align: center;
+  border-color: black;
+  background-color: black;
+  color: white;
+}
+
+.type {
+  display: inline;
+  margin: 0 10px 0 10px;
+}
+
+#banner {
+  font-family: fantasy;
+  text-align: center;
+  background-image: url("https://www.ytgraphics.com/static/37185b29bed15d0ca11f5aa507fc2032/5dbff/pokmeon.jpg");
+  background-size: cover;
 }

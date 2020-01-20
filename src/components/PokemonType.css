@@ -1,0 +1,36 @@
+.grass {
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: green
+}
+.fire {
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: orange;
+}
+.water {
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: blue;
+}
+.poison {
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color:purple;
+}
+.electric {
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color:yellow;
+}
+
+.default {
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: gainsboro
+}
+
+.pokemon-card__type {
+  font-size: 0.8rem;
+  color: black;
+}
