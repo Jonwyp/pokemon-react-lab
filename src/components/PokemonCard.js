@@ -3,13 +3,15 @@ import "./PokemonCard.css"
 import PokemonType from "./PokemonType"
 
 
-function PokemonCard({ pokemon }) {
+function PokemonCard({ pokemon, lang = "english" }) {
   const { id, name, type, base } = pokemon;
   const baseArr = Object.keys(base)
   return (
     <div className="pokemon-card">
+      <div className="pokemon-card__imageborder">
       <img className="pokemon-card__image" src={process.env.PUBLIC_URL + `pokemonImage/${id}.png`} alt="PokemonCard"/>
-  <div className="pokemon-name">{name.english}</div>
+      </div>
+  <div className="pokemon-name">{name[lang]}</div>
       <div>{type.map(t => (
         <PokemonType type={t} />
         ))}</div>

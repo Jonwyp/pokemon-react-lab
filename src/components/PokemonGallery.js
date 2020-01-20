@@ -1,12 +1,11 @@
 import React from "react"
-import pokemonData from "../pokemon/pokemon";
 import PokemonCard from "./PokemonCard";
 import "./PokemonGallery.css";
 
-function PokemonGallery() {
+function PokemonGallery({arr, lang}) {
   return (
-  <div className="pokemon-gallery"> {pokemonData.map(p => {
-return <PokemonCard pokemon={p} />})}
+  <div className="pokemon-gallery"> {arr.map(p => {
+return <PokemonCard pokemon={p} lang={lang}/>})}
   </div>)
 }
 

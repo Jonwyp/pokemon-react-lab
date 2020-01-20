@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import PokemonGallery from "./components/PokemonGallery";
-import SelectLang from "./components/SelectLang"
+import PokemonSearch from "./containers/PokemonSearch"
+import SelectLang from "./containers/SelectLang"
 
 function App() {
   return (
@@ -9,7 +9,8 @@ function App() {
     <div id="banner">
       <h1>Jonathan's PokeDex</h1>
     </div>
-      <PokemonGallery />
+    <SelectLang />
+    {/* <PokemonSearch /> */}
     </div>
   );
 }
