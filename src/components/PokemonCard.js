@@ -7,7 +7,7 @@ function PokemonCard({ pokemon, lang = "english" }) {
   const { id, name, type, base } = pokemon;
   const baseArr = Object.keys(base)
   return (
-    <div className="pokemon-card">
+    <div className="pokemon-card grow">
       <div className="pokemon-card__imageborder">
       <img className="pokemon-card__image" src={process.env.PUBLIC_URL + `pokemonImage/${id}.png`} alt="PokemonCard"/>
       </div>

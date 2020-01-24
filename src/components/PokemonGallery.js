@@ -6,7 +6,7 @@ function PokemonGallery({arr, lang}) {
   return (
   <div className="pokemon-gallery"> {arr.map(p => {
 return <PokemonCard pokemon={p} lang={lang}/>})}
-  </div>)
+  </div>) 
 }
 
 export default PokemonGallery;

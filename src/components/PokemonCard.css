@@ -7,10 +7,19 @@
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
+  background-color: rgb(68, 73, 75);
+  box-shadow: 4px 6px 8px grey;
 }
 
 .pokemon-card * {
   margin: 0;
+}
+
+.grow {
+  transition: all 0.3s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.1);
 }
 
 .pokemon-card__image {

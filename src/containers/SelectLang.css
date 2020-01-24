@@ -3,3 +3,7 @@
   flex-direction: row;
   
 }
+
+input[type=text] {
+  width: 150px;
+}
